@@ -1,0 +1,24 @@
+{
+  "name": "sle",
+  "version": "1.0.0",
+  "description": "\"# SLE\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheMostPoisonusIvy/SLE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheMostPoisonusIvy/SLE/issues"
+  },
+  "homepage": "https://github.com/TheMostPoisonusIvy/SLE#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
