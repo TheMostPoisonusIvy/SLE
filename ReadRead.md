@@ -1,3 +1,0 @@
-ululululu
-alalalalala
-elelelelele
