@@ -75,13 +75,26 @@
             return strReturn;
         }
 
+        function stringToEl(string) {
+            var parser = new DOMParser(),
+                content = 'text/html',
+                DOM = parser.parseFromString(string, content);
+            return DOM.body.childNodes[0];
+        }
+
         function createNewMap(){
             let ort = document.getElementById("Ort").value
             let response = get("./api?newMapForLocation=" + ort)
             document.getElementById("createMapForm").remove()
-            let p = document.createElement("p")
-            p.innerText = response
-            document.getElementById("createMap").appendChild(p)
+            document.getElementById("createMap").appendChild(stringToEl(
+                `
+                <div>
+                    <p>Ort: ${ort}</p>
+                    <p>Key: ${response}</p>
+                    <span>Link: <a href="${location.origin + "/map?key=" + response}">${location.origin + "/map?key=" + response}</a></span>
+                </div>
+                `
+            ))
         }
     </script>
 </body>
