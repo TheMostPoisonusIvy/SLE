@@ -7,8 +7,11 @@ body {
     padding-bottom:[footer-height] 
 }
 header{
-    padding-bottom: 10px;
     border-bottom: #003399 solid 3px;
+    max-width: 1318px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }
 
 article {
