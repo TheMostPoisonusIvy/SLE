@@ -3,6 +3,7 @@
 <head>
 <title>Schnelle Lageerkundung</title>
 <link rel="stylesheet" href="styles/general.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -17,8 +18,9 @@
         <article>
             <h1>Schnelle Lageerkundungen</h1>
 
-            <form id="createNewMap">
-                <p>Ort: <input type="text" size="20" name="Ort" /></p>
+            <form action="javascript:createNewMap()">
+                <p>Ort: <input type="text" size="20" name="Ort" id="Ort" /></p>
+                <input type="submit" value="Map Erstellen">
             </form>
 
             <ul>
@@ -44,5 +46,25 @@
                     height="32" alt="follow us on Twitter" src="logo_twitter.png"></a>
         </h3>
     </footer>
+
+    <script>
+        function get(url) {
+            var strReturn = "";
+            jQuery.ajax({
+                url: url,
+                success: function (html) {
+                    strReturn = html;
+                },
+                async: false
+            });
+            return strReturn;
+        }
+
+        function createNewMap(){
+            let ort = document.getElementById("Ort").value
+            let response = get("./api?newMapForLocation=" + ort)
+            console.log(response)
+        }
+    </script>
 </body>
 </html> 
