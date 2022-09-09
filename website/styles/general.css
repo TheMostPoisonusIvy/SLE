@@ -60,16 +60,27 @@ article {
     margin-left: auto;
     margin-right: auto;
 }
-div.wrapper{
-    text-align:center;
+ul {
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
 }
-div.innerwrapperleft{
-    float:left;
-    background-color:#003399;
-    width:50%;
+ul li {
+    margin: 10px;
+    size:33%;
+    display: inline-block;
 }
-div.innterwrapperright{
-    float:left;
-    background-color:#003399;
-    width:50%;
+ul li a {
+    padding: 5px;
+    display: inline-block;      
+    border: 1px solid #f2f2f2;
+}
+ul li a img {
+    width: 125px;
+    height: 125px;
+    display: block;
+}
+ul li a:hover img {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
