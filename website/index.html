@@ -2,8 +2,8 @@
 <html>
 <head>
 <title>Schnelle Lageerkundung</title>
-<link rel="stylesheet" href="styles/general.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="styles/indexfile.css">
 </head>
 <body>
     <header>
@@ -17,37 +17,53 @@
     <main>
         <article>
             <h1>Schnelle Lageerkundungen</h1>
-
-            <form action="javascript:createNewMap()">
-                <p>Ort: <input type="text" size="20" name="Ort" id="Ort" /></p>
-                <input type="submit" value="Map Erstellen">
-            </form>
-
-            <ul>
-                <li><a href="#"><img src="images/logo.png" alt="Club Card"></a></li>
-                <li><a href="#"><img src="images/logo.png" alt="Diamond Card"></a></li>
-                <li><a href="#"><img src="images/logo.png" alt="Spade Card"></a></li>
-            </ul>
+            <div id="wrapper">
+                <div id="c1">
+                    <h3>Erstellen einer neuen Karte</h3> 
+                    <form action="javascript:createNewMap()">
+                        <p>Ort: <input type="text" size="20" name="Ort" id="Ort" /></p>
+                        <input type="submit" value="Map Erstellen">
+                    </form>
+                </div>
+                <div id="c2">
+                    <h3>Geben Sie Ihren Schlüssel zu einer Lagekarte ein</h3>
+                    <form id="createNewMap">
+                        <p>Key: <input type="text" size="20" name="Key" /></p>
+                    </form>
+                </div>
+                <div id="c3">
+                    <h3>Erklärung</h3>
+                </div>
+            </div>
         </article>
     </main>
 
 
+    <footer class="footer">
+        <div class="footer-left col-md-4 col-sm-6">
+          <p class="about">
+            <span> About the company</span> Filler
+          </p>
+          <div class="icons">
+            <a href="#"><img width="32" height="23"
+                alt="See the sourcecode on GitHub" src="images/github.svg"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-center col-md-4 col-sm-6">
+          <div>
+            <p><span> Street name and number</span> City, Country</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#"> office@company.com</a></p>
+          </div>
+        </div>
+        <div class="footer-right col-md-4 col-sm-6">
+          <p class="name"> Made by szwiletitsch and TheMostPoisonusIvy &copy; 2022</p>
+        </div>
+      </footer>
 
-    <footer class="row">
-        <h3 class="column">
-            
-        </h3>
-        <h3 class="column">
-            <a class="column" target="_self" href="legal.html">Impressum</a>
-        </h3>
-        <h3 class="column">
-            Der Quellcode auf GitHub <br>
-            <a target="_blank" title="follow us on Twitter" href="https://www.twitter.com/EUKI_Climate"><img width="32"
-                    height="32" alt="follow us on Twitter" src="logo_twitter.png"></a>
-        </h3>
-    </footer>
-
-    <script>
+      <script>
         function get(url) {
             var strReturn = "";
             jQuery.ajax({
