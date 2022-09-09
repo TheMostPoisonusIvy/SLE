@@ -18,20 +18,20 @@
         <article>
             <h1>Schnelle Lageerkundungen</h1>
             <div id="wrapper">
-                <div id="c1">
+                <div id="createMap">
                     <h3>Erstellen einer neuen Karte</h3> 
-                    <form action="javascript:createNewMap()">
+                    <form action="javascript:createNewMap()" id="createMapForm">
                         <p>Ort: <input type="text" size="20" name="Ort" id="Ort" /></p>
                         <input type="submit" value="Map Erstellen">
                     </form>
                 </div>
-                <div id="c2">
+                <div id="accessMap">
                     <h3>Geben Sie Ihren Schlüssel zu einer Lagekarte ein</h3>
                     <form id="createNewMap">
                         <p>Key: <input type="text" size="20" name="Key" /></p>
                     </form>
                 </div>
-                <div id="c3">
+                <div id="instructions">
                     <h3>Erklärung</h3>
                 </div>
             </div>
@@ -78,7 +78,10 @@
         function createNewMap(){
             let ort = document.getElementById("Ort").value
             let response = get("./api?newMapForLocation=" + ort)
-            console.log(response)
+            document.getElementById("createMapForm").remove()
+            let p = document.createElement("p")
+            p.innerText = response
+            document.getElementById("createMap").appendChild(p)
         }
     </script>
 </body>
