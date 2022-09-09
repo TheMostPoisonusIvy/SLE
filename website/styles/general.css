@@ -50,11 +50,26 @@ h3 {
     font-family: "Segoe UI";
 }
 
-form{
-    
-}
 footer {
     position: relative;
     bottom: 0px;
     left: 0px;
+}
+article {
+    max-width: 1318px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.wrapper{
+    text-align:center;
+}
+div.innerwrapperleft{
+    float:left;
+    background-color:#003399;
+    width:50%;
+}
+div.innterwrapperright{
+    float:left;
+    background-color:#003399;
+    width:50%;
 }
