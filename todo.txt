@@ -3,3 +3,7 @@
 # stadtauswahl in index
 
 # serverdaten sicherstellung bei serverabsturz / serverneustart
+
+# leaflet on mobile und design der Seite in mobiler Version
+
+# Implementierung von Mehrsprachigkeit
