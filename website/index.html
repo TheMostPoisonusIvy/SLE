@@ -1,71 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Schnelle Lageerkundung</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<link rel="stylesheet" href="styles/indexfile.css">
-<link rel="stylesheet" href="styles/main.css">
-<link rel="stylesheet" href="styles/footer.css">
-<script type="text/javascript" src="scripts/general.js"></script>
-<script type="text/javascript" src="scripts/indexfile.js"></script>
+  <title>Schnelle Lageerkundung</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles/indexfile.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <script type="text/javascript" src="scripts/general.js"></script>
+  <script type="text/javascript" src="scripts/indexfile.js"></script>
 </head>
+
 <body>
-    <div id="header"></div>
-    <header>
-        <article>
-            <img class="logo" src="images/logo.png" width="179" height="102" alt="Logo" title="Logo">
-            <nav class="noPrint">
-            </nav>
-        </article>
-    </header>
+  <div id="header"></div>
+  <header>
+    <article>
+      <a href="index.html">
+        <img class="logo" src="images/logo.png" width="179" height="102" alt="Logo" title="Logo">
+      </a>
+      </nav>
+    </article>
+  </header>
 
-    <main>
-        <article>
-            <h1>Schnelle Lageerkundungen</h1>
-            <div id="wrapper">
-                <div id="createMap">
-                    <h3>Erstellen einer neuen Karte</h3> 
-                    <form action="javascript:createNewMap()" id="createMapForm">
-                        <p>Ort: <input type="text" size="20" name="Ort" id="Ort" /></p>
-                        <input type="submit" value="Map Erstellen">
-                    </form>
-                </div>
-                <div id="accessMap">
-                    <h3>Geben Sie Ihren Schlüssel zu einer Lagekarte ein</h3>
-                    <form action="./map" id="createNewMap">
-                        <p>Key: <input type="text" size="20" name="Key" /></p>
-                        <input type="submit" value="Karte Öffnen">
-                    </form>
-                </div>
-                <div id="instructions">
-                    <h3>Erklärung</h3>
-                </div>
-            </div>
-        </article>
-    </main>
+  <main>
+    <article>
+      <h1>Schnelle Lageerkundungen</h1>
+      <div id="wrapper">
+        <div id="createMap">
+          <h3>Erstellen einer neuen Karte</h3>
+          <form action="javascript:createNewMap()" id="createMapForm">
+            <p>Ort: <input type="text" size="20" name="Ort" id="Ort" /></p>
+            <input type="submit" value="Map Erstellen">
+          </form>
+        </div>
+        <div id="accessMap">
+          <h3>Geben Sie Ihren Schlüssel zu einer Lagekarte ein</h3>
+          <form action="./map" id="createNewMap">
+            <p>Key: <input type="text" size="20" name="Key" /></p>
+            <input type="submit" value="Karte Öffnen">
+          </form>
+        </div>
+        <div id="instructions">
+          <h3>Erklärung</h3>
+        </div>
+      </div>
+    </article>
+  </main>
 
 
-    <footer class="footer">
-        <div class="footer-left col-md-4 col-sm-6">
-          <p class="about">
-            <span> Orginalquellcode auf GitHub</span>
-          </p>
-          <div class="icons">
-            <a href="#"><img width="32" height="23"
-                alt="See the sourcecode on GitHub" src="images/github.svg"><i class="fa fa-linkedin"></i></a>
-          </div>
-        </div>
-        <div class="footer-center col-md-4 col-sm-6">
-          <div>
-            <p><span> Made by two idiots with PCs</span></p>
-          </div>
-          <div>
-            <p><a href="#"> office@company.com</a></p>
-          </div>
-        </div>
-        <div class="footer-right col-md-4 col-sm-6">
-          <p class="name"> Made by szwiletitsch and TheMostPoisonusIvy &copy; 2022</p>
-        </div>
-      </footer>   
+  <footer class="footer">
+    <div class="footer-left col-md-4 col-sm-6">
+      <p class="about">
+        <span> Orginalquellcode auf GitHub</span>
+      </p>
+      <div class="icons">
+        <a href="#"><img width="32" height="23" alt="See the sourcecode on GitHub" src="images/github.svg"><i
+            class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="footer-center col-md-4 col-sm-6">
+      <div>
+        <p><span> Made by two idiots with PCs</span></p>
+      </div>
+      <div>
+        <p><a href="#"> office@company.com</a></p>
+      </div>
+    </div>
+    <div class="footer-right col-md-4 col-sm-6">
+      <p class="name"> Made by szwiletitsch and TheMostPoisonusIvy &copy; 2022</p>
+    </div>
+  </footer>
 </body>
-</html> 
+
+</html>
