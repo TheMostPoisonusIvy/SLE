@@ -7,6 +7,8 @@
 
 <body>
     <script>
+        var key = (new URLSearchParams(window.location.search)).get("key")
+
         function get(url) {
             var strReturn = "";
             jQuery.ajax({
@@ -19,7 +21,7 @@
             return strReturn;
         }
 
-        console.log(get("./api"))
+        console.log(get("./api?getMapDataFromKey=" + key))
         
     </script>
 </body>
