@@ -32,7 +32,7 @@ async function getMapData(key){
     if (key in currentMapData){
         return currentMapData[key]
     }
-    return {}
+    return {"ort": "there is no map"}
 }
 
 async function addMapData(request){
