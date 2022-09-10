@@ -1,0 +1,5 @@
+# api key verstecken
+
+# stadtauswahl in index
+
+# serverdaten sicherstellung bei serverabsturz / serverneustart
