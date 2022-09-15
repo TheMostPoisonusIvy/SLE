@@ -6,6 +6,8 @@ const attribution = '<a href="https://www.maptiler.com/copyright/" target="_blan
 const tiles = L.tileLayer(tileUrl, { attribution }).addTo(map);
 var key = (new URLSearchParams(window.location.search)).get("key")
 
+
+
 function get(url) {
     var strReturn = "";
     jQuery.ajax({
@@ -31,8 +33,6 @@ mapdiv.ondrop = function (e) {
   e.preventDefault()
   imagePath = e.dataTransfer.getData("text/plain")
   coordinates = map.containerPointToLatLng(L.point([e.clientX,e.clientY]))
-  L.marker(coordinates,{icon: L.icon({iconUrl: imagePath}),
-                        draggable: true})
-    .addTo(map)
+  L.marker(coordinates, {icon: L.icon({iconUrl: imagePath}), draggable: true}).addTo(map)
 }
 
