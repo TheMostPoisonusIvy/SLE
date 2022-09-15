@@ -33,6 +33,11 @@ mapdiv.ondrop = function (e) {
   e.preventDefault()
   imagePath = e.dataTransfer.getData("text/plain")
   coordinates = map.containerPointToLatLng(L.point([e.clientX,e.clientY]))
-  L.marker(coordinates, {icon: L.icon({iconUrl: imagePath}), draggable: true}).addTo(map)
+  icon = L.icon({
+    iconUrl: imagePath,
+    iconSize: [100, 100],
+    iconAnchor: [50, 50]
+  })
+  L.marker(coordinates, {icon: icon, draggable: true}).addTo(map)
 }
 
