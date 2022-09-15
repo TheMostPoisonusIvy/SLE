@@ -1,4 +1,4 @@
-# api key verstecken
+# api key verstecken (nur mit eigener proxy möglich)
 
 # stadtauswahl in index
 
@@ -6,4 +6,6 @@
 
 # leaflet on mobile und design der Seite in mobiler Version
 
-# Implementierung von Mehrsprachigkeit
+# Implementierung von Mehrsprachigkeit (prio 0)
+
+# favicon
