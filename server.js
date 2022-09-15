@@ -1,5 +1,6 @@
 const express = require('express')
 const api = require('./server_modules/api')
+const { unescape } = require('querystring'); 
 const fs = require('fs')
 
 const app = express()
@@ -17,7 +18,8 @@ app.get('/api', async (req, res) => {
 })
 
 app.get('*', async (req, res) => {
-	let path = req.url.split("/").filter(element => { return element !== ''; });
+	let url = unescape(req.url)
+	let path = url.split("/").filter(element => { return element !== ''; });
 	let file = path.pop();
 	file = file.replaceAll(/\?.*$/gm, "")
 
